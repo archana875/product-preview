@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Preview Design</title>
+    <style>
+        body{
+            background-color: #b3ffb3;
+            margin-left: 30px;
+        }
+        #head-img{
+           width:300px;
+           height: 300px;
+           box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+           object-fit:cover;
+           display: block;
+           border: 1px solid #679898;
+           border-radius:0px;
+           margin: 40px auto;
+           
+        }
+        .design-img{
+            margin: 10px;
+            height: 50px;
+            width: 70px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .design-img-container{
+         display:flex;
+         margin-left: 280px;
+        }
+    </style>
 </head>
 <body>
-    
+
+
+    <img src="buds-8.png" id="head-img"/>
+    <div class="design-img-container">
+        <img src="buds-1.jpg" class="design-img" onclick="changeImg(1)"/>
+        <img src="buds-2.png" class="design-img" onclick="changeImg(2)"/>
+        <img src="buds-3.jpg" class="design-img" onclick="changeImg(3)"/>
+        <img src="buds-4.jpg" class="design-img" onclick="changeImg(4)"/>
+        <img src="buds-5.jpg" class="design-img" onclick="changeImg(5)"/>
+        <img src="buds-6.jpg" class="design-img" onclick="changeImg(6)"/>
+        <img src="buds-7.jpg" class="design-img" onclick="changeImg(7)"/>
+        <img src="buds-9.jpg" class="design-img" onclick="changeImg(8)"/>
+    </div>
+
+
+
+<script>
+    function changeImg(num){
+        const mainImage = document.getElementById('head-img');
+        if(num==1){
+            mainImage.src = "buds-1.jpg";
+        }else if(num==2){
+            mainImage.src = "buds-2.png";
+        }else if(num==3){
+            mainImage.src = "buds-3.jpg";
+        }else if(num==4){
+            mainImage.src = "buds-4.jpg";
+        }else if(num==5){
+            mainImage.src = "buds-5.jpg";
+        }else if(num==6){
+            mainImage.src = "buds-6.jpg";
+        }else if(num==7){
+            mainImage.src = "buds-7.jpg";
+        }
+        else if(num==8){
+            mainImage.src = "buds-9.jpg";
+        }
+}
+</script>
+
+
 </body>
 </html>
